@@ -2,6 +2,10 @@
 
 Lihtne eestikeelne isiklik veebileht, mis tutvustab Silver Kaasikut, tema tausta ja huvisid.
 
+## Veebileht
+
+[Ava GitHub Pagesis majutatud tutvustusleht](https://silverkaasik.github.io/tutvustusleht-vol2/)
+
 ## Lehe sisu
 
 - Lühitutvustus ja asukoht Jõgevamaal

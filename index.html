@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Silver Kaasiku tutvustus: Jõgevamaa, fotograafia, aiandus ja lugemine.">
+  <title>Silver Kaasik — minu maailm</title>
+  <style>
+    :root { color-scheme: light; --ink:#24352d; --muted:#65766c; --green:#426b50; --cream:#f5f3eb; --paper:#fffefa; --line:#e5e8df; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+    a { color:inherit; }
+    .page { width:min(1100px, calc(100% - 40px)); margin:0 auto; padding:28px 0 52px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:8px 0 24px; border-bottom:1px solid var(--line); font-family:Arial,sans-serif; }
+    .brand { font-size:13px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; }
+    header a { text-decoration:none; color:var(--muted); font-size:14px; }
+    main { padding-top:44px; }
+    .hero { display:grid; grid-template-columns:1.02fr .98fr; gap:clamp(32px,7vw,86px); align-items:center; }
+    .eyebrow { font:700 12px Arial,sans-serif; letter-spacing:.18em; color:var(--green); text-transform:uppercase; }
+    h1 { font-size:clamp(48px,8vw,94px); line-height:.98; letter-spacing:-.055em; font-weight:500; margin:18px 0 24px; }
+    .intro { max-width:460px; color:#506157; font-size:19px; line-height:1.75; }
+    .place { display:inline-flex; align-items:center; gap:9px; color:var(--muted); font:14px Arial,sans-serif; margin-top:16px; }
+    .place svg { width:17px; height:17px; }
+    .portrait { position:relative; margin:0; }
+    .portrait img { display:block; width:100%; border-radius:48% 48% 8px 8px; aspect-ratio: .91; object-fit:cover; background:#dce7d8; }
+    .portrait figcaption { position:absolute; right:-17px; bottom:24px; background:var(--paper); padding:13px 17px; border-radius:3px; box-shadow:0 8px 30px #26362b18; font:12px Arial,sans-serif; color:var(--muted); }
+    .interests { margin-top:76px; padding-top:30px; border-top:1px solid var(--line); display:grid; grid-template-columns:.75fr 1.25fr; gap:30px; }
+    h2 { font-size:30px; font-weight:500; margin:0; letter-spacing:-.03em; }
+    .interest-list { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .interest { padding:19px 18px; background:var(--paper); border:1px solid var(--line); border-radius:6px; }
+    .interest .num { color:#91a28f; font:12px Arial,sans-serif; }
+    .interest h3 { margin:22px 0 7px; font-size:20px; font-weight:500; }
+    .interest p { color:var(--muted); font:13px/1.55 Arial,sans-serif; margin:0; }
+    footer { margin-top:62px; padding-top:23px; border-top:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:18px; font:13px Arial,sans-serif; color:var(--muted); }
+    .social { color:var(--green); font-weight:700; text-decoration:none; border-bottom:1px solid #9caf9d; padding-bottom:4px; }
+    .social:hover { color:#24352d; border-color:#24352d; }
+    a:focus-visible { outline:3px solid #90ad81; outline-offset:4px; }
+    @media(max-width:720px) { .page { width:min(100% - 32px, 540px); padding-top:18px; } main { padding-top:32px; } .hero { grid-template-columns:1fr; gap:30px; } .portrait { max-width:460px; margin:0 auto; } .portrait figcaption { right:-6px; } .interests { margin-top:52px; grid-template-columns:1fr; } .interest-list { grid-template-columns:1fr; } .interest { display:grid; grid-template-columns:35px 1fr; column-gap:8px; } .interest .num { grid-row:span 2; } .interest h3 { margin:0 0 5px; } footer { margin-top:42px; align-items:flex-start; flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <span class="brand">Silver Kaasik</span>
+      <a href="#huvid">Minu huvid</a>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="nimi">
+        <div>
+          <p class="eyebrow">Tere, mina olen</p>
+          <h1 id="nimi">Silver<br>Kaasik.</h1>
+          <p class="intro">Elan Jõgevamaal ja olen kahe lapse isa. Olen õppinud keskkonnakaitset ning tunnen rõõmu looduses märkamisest, oma kätega kasvatamisest ja heast raamatust.</p>
+          <p class="place"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg>Jõgevamaa, Eesti</p>
+        </div>
+        <figure class="portrait">
+          <img src="silver-kaasik.png" alt="Silver Kaasik portreefotol">
+          <figcaption>Tere tulemast minu lehele</figcaption>
+        </figure>
+      </section>
+      <section class="interests" id="huvid" aria-labelledby="huvid-title">
+        <div><p class="eyebrow">Vaba aja rõõmud</p><h2 id="huvid-title">Asjad, mis mind köidavad</h2></div>
+        <div class="interest-list">
+          <article class="interest"><span class="num">01</span><h3>Fotograafia</h3><p>Ümbritsevate hetkede ja ilu jäädvustamine.</p></article>
+          <article class="interest"><span class="num">02</span><h3>Aiandus</h3><p>Kasvamise jälgimine ja näpud mullas.</p></article>
+          <article class="interest"><span class="num">03</span><h3>Lugemine</h3><p>Hea raamatuga uutesse mõtetesse sukeldumine.</p></article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Rõõm on tutvuda!</span>
+      <a class="social" href="https://www.instagram.com/kaasiksilver/" target="_blank" rel="noopener noreferrer" aria-label="Vaata Silver Kaasiku Instagrami profiili (avaneb uues aknas)">Leia mind Instagramis ↗</a>
+    </footer>
+  </div>
+</body>
+</html>
+
